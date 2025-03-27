@@ -1,0 +1,20 @@
+@if (animal) {
+  <div>
+    <h2>{{ animal.name }}</h2>
+    @if (animal.taxonomy) {
+      <div>
+        <h3>Taxonomy</h3>
+        <ul>
+          <li><strong>Kingdom:</strong> {{ animal.taxonomy.kingdom }}</li>
+          <li><strong>Phylum:</strong> {{ animal.taxonomy.phylum }}</li>
+          <li><strong>Class:</strong> {{ animal.taxonomy.class }}</li>
+          <li><strong>Order:</strong> {{ animal.taxonomy.order }}</li>
+          <li><strong>Family:</strong> {{ animal.taxonomy.family }}</li>
+          <li><strong>Genus:</strong> {{ animal.taxonomy.genus }}</li>
+          <li><strong>Scientific Name:</strong> {{ animal.taxonomy.scientific_name }}</li>
+        </ul>
+      </div>
+    }
+    
+  </div>
+}
